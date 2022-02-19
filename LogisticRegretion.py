@@ -173,6 +173,9 @@ class LogisticRegretion:
         return X_train,X_test,Y_train,Y_test
 
     def show_false_example(self):
+        """
+        展示识别错误的图像和对应的a的值
+        """
         position=np.where(self.true_false_matrix==False)[1]
         for i in position:
             print('a的值为:',self.a[0,i])
